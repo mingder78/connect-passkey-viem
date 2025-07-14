@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 import ConnectWallet from "../components/ConnectWallet.tsx";
+import ConnectPasskey from "../components/ConnectPasskey.tsx";
 import BaseLayout from "../layouts/main.astro";
 ---
 
@@ -8,10 +9,10 @@ import BaseLayout from "../layouts/main.astro";
 	<BaseLayout title="alpha">
 		<head>
 			<meta charset="utf-8" />
-			<title>MetaMask with Astro + viem</title>
 		</head>
 		<body>
 			<ConnectWallet client:load />
+			<ConnectPasskey client:load />
 		</body>
 	</BaseLayout>
 </html>
